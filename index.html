@@ -6,7 +6,6 @@
     <title>AMIT - Recreación Web</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        /* --- ESTILOS GENERALES --- */
         * {
             margin: 0;
             padding: 0;
@@ -26,7 +25,6 @@
             padding: 0 20px;
         }
 
-        /* --- HEADER Y LOGO --- */
         .main-header {
             padding: 40px 0;
             display: flex;
@@ -50,7 +48,6 @@
             line-height: 1.2;
         }
 
-        /* --- NAVEGACIÓN --- */
         .main-nav {
             border-top: 1px solid #a300ff;
             border-bottom: 1px solid #a300ff;
@@ -79,7 +76,6 @@
             font-weight: 700;
         }
 
-        /* --- SECCIÓN INTRODUCCIÓN --- */
         .section-title {
             text-align: center;
             font-size: 24px;
@@ -113,7 +109,6 @@
             margin-bottom: 15px;
         }
 
-        /* --- ÚLTIMAS NOTICIAS (Tarjetas) --- */
         .news-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -144,7 +139,6 @@
             font-weight: bold;
         }
 
-        /* --- STATS BAR --- */
         .stats-bar {
             display: flex;
             justify-content: space-around;
@@ -162,145 +156,121 @@
             font-weight: 700;
         }
 
-        /* --- CONTACTO --- */
+        /* CONTACTO MODIFICADO */
         .contact-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
+            display: block;
+            text-align: center;
             padding-bottom: 100px;
         }
 
-        .form-group {
-            margin-bottom: 15px;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background: #fdfdfd;
-        }
-
-        .btn-send {
-            background-color: #8a2be2;
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 10px;
-            cursor: pointer;
-            float: right;
-            font-weight: bold;
-        }
-
-        /* --- RESPONSIVE --- */
         @media (max-width: 768px) {
-            .intro-grid, .contact-container {
+            .intro-grid {
                 grid-template-columns: 1fr;
             }
-            .main-header { flex-direction: column; text-align: center; }
-            .logo-sub { text-align: center; }
-            .stats-bar { flex-direction: column; gap: 20px; border-radius: 20px; }
+            .main-header { 
+                flex-direction: column; 
+                text-align: center; 
+            }
+            .logo-sub { 
+                text-align: center; 
+            }
+            .stats-bar { 
+                flex-direction: column; 
+                gap: 20px; 
+                border-radius: 20px; 
+            }
         }
     </style>
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="logo-text">AMIT</div>
-        <div class="logo-sub">Asociación de Mujeres<br>Investigadoras y<br>Tecnólogas</div>
-    </header>
+<header class="main-header">
+    <div class="logo-text">AMIT</div>
+    <div class="logo-sub">Asociación de Mujeres<br>Investigadoras y<br>Tecnólogas</div>
+</header>
 
-    <nav class="main-nav">
-        <ul>
-            <li><a href="#" class="active">PRINCIPAL</a></li>
-            <li><a href="#">ÚLTIMAS NOTICIAS</a></li>
-            <li><a href="#">NUESTRAS CHARLAS</a></li>
-            <li><a href="#">GALERÍA</a></li>
-            <li><a href="#">SOBRE AMIT</a></li>
-            <li><a href="#">CONTÁCTANOS</a></li>
-        </ul>
-    </nav>
+<nav class="main-nav">
+    <ul>
+        <li><a href="#" class="active">PRINCIPAL</a></li>
+        <li><a href="#">ÚLTIMAS NOTICIAS</a></li>
+        <li><a href="#">NUESTRAS CHARLAS</a></li>
+        <li><a href="#">GALERÍA</a></li>
+        <li><a href="#">SOBRE AMIT</a></li>
+        <li><a href="#">CONTÁCTANOS</a></li>
+    </ul>
+</nav>
 
-    <div class="container">
-        
-        <h2 class="section-title">¿QUÉ ES AMIT?</h2>
-        <section class="intro-grid">
-            <div class="box">
-                <p>AMIT es una asociación española sin ánimo de lucro que agrupa a mujeres investigadoras y tecnólogas de diferentes campos de la ciencia, la tecnología y la investigación.</p>
-                <p>Trabajan para visibilizar y apoyar a las científicas, ofrecer redes de contacto, mentoría, datos y espacios de debate.</p>
-                <p>Organiza eventos, campañas y acciones para aumentar la visibilidad.</p>
-            </div>
-            <div class="box">
-                <p><strong>Los objetivos de AMIT incluyen:</strong></p>
-                <ul>
-                    <li>Promover la igualdad de género en la investigación.</li>
-                    <li>Facilitar redes de apoyo y colaboración.</li>
-                    <li>Visibilizar la labor científica de las mujeres en España.</li>
-                </ul>
-            </div>
-        </section>
+<div class="container">
+    
+    <h2 class="section-title">¿QUÉ ES AMIT?</h2>
+    <section class="intro-grid">
+        <div class="box">
+            <p>AMIT es una asociación española sin ánimo de lucro que agrupa a mujeres investigadoras y tecnólogas de diferentes campos de la ciencia, la tecnología y la investigación.</p>
+            <p>Trabajan para visibilizar y apoyar a las científicas, ofrecer redes de contacto, mentoría, datos y espacios de debate.</p>
+            <p>Organiza eventos, campañas y acciones para aumentar la visibilidad.</p>
+        </div>
+        <div class="box">
+            <p><strong>Los objetivos de AMIT incluyen:</strong></p>
+            <ul>
+                <li>Promover la igualdad de género en la investigación.</li>
+                <li>Facilitar redes de apoyo y colaboración.</li>
+                <li>Visibilizar la labor científica de las mujeres en España.</li>
+            </ul>
+        </div>
+    </section>
 
-        <h2 class="section-title">ÚLTIMAS NOTICIAS</h2>
-        <section class="news-grid">
-            <div class="news-card">
-                <div class="news-img" style="background-image: url('conocelas.jpg');"></div>
-                <h3>Charla "Conocelas"</h3>
-                <p>Colaboración con la asociación de investigación en cáncer.</p>
-                <a href="#" class="read-more">Seguir leyendo... ></a>
-            </div>
-            <div class="news-card">
-                <div class="news-img" style="background-image: url('exposicion.jpg');;"></div>
-                <h3>Exposición Enfermeras</h3>
-                <p>Día internacional de la mujer y la niña en la ciencia.</p>
-                <a href="#" class="read-more">Seguir leyendo... ></a>
-            </div>
-            <div class="news-card">
-                <div class="news-img" style="background-image: url('aventuras.jpg');;"></div>
-                <h3>Aventuras con científicas</h3>
-                <p>Actividades educativas en centros tecnológicos.</p>
-                <a href="#" class="read-more">Seguir leyendo... ></a>
-            </div>
-        </section>
+    <h2 class="section-title">ÚLTIMAS NOTICIAS</h2>
+    <section class="news-grid">
+        <div class="news-card">
+            <div class="news-img" style="background-image: url('conocelas.jpg');"></div>
+            <h3>Charla "Conocelas"</h3>
+            <p>Colaboración con la asociación de investigación en cáncer.</p>
+            <a href="#" class="read-more">Seguir leyendo... ></a>
+        </div>
+        <div class="news-card">
+            <div class="news-img" style="background-image: url('exposicion.jpg');"></div>
+            <h3>Exposición Enfermeras</h3>
+            <p>Día internacional de la mujer y la niña en la ciencia.</p>
+            <a href="#" class="read-more">Seguir leyendo... ></a>
+        </div>
+        <div class="news-card">
+            <div class="news-img" style="background-image: url('aventuras.jpg');"></div>
+            <h3>Aventuras con científicas</h3>
+            <p>Actividades educativas en centros tecnológicos.</p>
+            <a href="#" class="read-more">Seguir leyendo... ></a>
+        </div>
+    </section>
 
-        <section class="stats-bar">
-            <div class="stat-item">
-                <span class="number">1,500 +</span>
-                <span class="label">Socias</span>
-            </div>
-            <div class="stat-item">
-                <span class="number">25+</span>
-                <span class="label">Años de historia</span>
-            </div>
-            <div class="stat-item">
-                <span class="number">100+</span>
-                <span class="label">Eventos anuales</span>
-            </div>
-        </section>
+    <section class="stats-bar">
+        <div class="stat-item">
+            <span class="number">1,500 +</span>
+            <span class="label">Socias</span>
+        </div>
+        <div class="stat-item">
+            <span class="number">25+</span>
+            <span class="label">Años de historia</span>
+        </div>
+        <div class="stat-item">
+            <span class="number">100+</span>
+            <span class="label">Eventos anuales</span>
+        </div>
+    </section>
 
-        <h2 class="section-title">CONTÁCTANOS</h2>
-        <section class="contact-container">
-            <div>
-                <p><strong>EMAIL</strong></p>
-                <p>info@amit-es.org</p>
-                <br>
-                <p><strong>DIRECCIÓN</strong></p>
-                <p>Calle ..., ..., Albacete, España</p>
-            </div>
-            <form>
-                <div class="form-group">
-                    <input type="text" placeholder="Nombre completo">
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <textarea rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
-                </div>
-                <button type="submit" class="btn-send">Enviar mensaje</button>
-            </form>
-        </section>
-    </div>
+    <h2 class="section-title">CONTÁCTANOS</h2>
+    <section class="contact-container">
+        <p><strong>EMAIL</strong></p>
+        <p>amituclm0@gmail.com</p>
+        <br>
+
+        <p><strong>INSTAGRAM</strong></p>
+        <p>@amitclm</p>
+        <br>
+
+        <p><strong>LINKEDIN</strong></p>
+        <p>AMIT CLM</p>
+    </section>
+
+</div>
 
 </body>
 </html>
